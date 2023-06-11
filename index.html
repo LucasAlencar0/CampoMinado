@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Campo Minado</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- TOPO DA PÁGINA -->
+  <header>
+    <a href=""><img src="logo.png" alt="" height="100"></a>
+    <nav class="nav">
+      <a href="">Contato</a>
+      <a href="">Sobre</a>
+      <a href="">Discord</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Campo Minado</h1>
+    <div id="campo-minado"></div>
+    <div id="reiniciar-container">
+      <button id="reiniciar" style="display: none;" onclick="reiniciarJogo()">Jogar Novamente</button>
+    </div>
+    <button id="aumentar-bombas" onclick="aumentarBombas()">Aumentar Bombas</button>
+    <button id="diminuir-bombas" onclick="diminuirBombas()">Diminuir Bombas</button>
+    <h1>Qtd de bombas</h1>
+    <h1 id="contador-bombas"></h1>
+  </main>
+
+
+
+  <footer>
+    <section class="img-final">
+      <section class="novidades-promomocoes">
+        <h6>RECEBA NOVIDADES E AVISOS</h6>
+        <input type="text" placeholder="seu nome" maxlength="20">
+        <input type="text" placeholder="Seu email" maxlength="16">
+        <button class="buttons">OK</button>
+      </section>
+    </section>
+    <section class="final-rodape">
+      <article>
+        <h6>INSTITUCIONAL</h6>
+        <a style="text-decoration: none;" href="quem-somos.html">
+          <p>QUEM SOMOS</p>
+        </a>
+        <a style="text-decoration: none;" href="produtos.html">
+          <P>CONTATO</P>
+        </a>
+        <a style="text-decoration: none;" href="produtos.html">
+          <P>DISCORD</P>
+        </a>
+      </article>
+      <article>
+        <h6>ACESSO RÁPIDO</h6>
+        <p>Eai, vai jogar o que?</p>
+        <P>Play on!</P>
+        <p>Workstation</p>
+
+      </article>
+      <article>
+        <h6>PEÇAS E ACESSÓRIOS</h6>
+        <p>Peças</p>
+        <p>Acessórios</p>
+
+      </article>
+    </section>
+    <h5 style="color: rgb(189, 189, 189); margin-top: 35px;">copyright © 2022 todos os direitos reservados LUCAS ALENCAR
+    </h5>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

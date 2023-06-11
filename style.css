@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+* {
+    padding: 0;
+    box-sizing: border-box;
+
+}body{
+  background-image: url(ziiggg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250%;
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: multiply;
+}
+header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  align-items: center;
+  width: 1200px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+}
+nav a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+nav a::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(247, 121, 4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease;
+}
+nav a:hover::after {
+  width: 100%;
+}
+
+main {
+  
+}
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+#campo-minado {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px; /* Aumente o valor para adicionar mais espaçamento */
+  width: 620px; /* Aumente o valor para aumentar o tamanho total do campo */
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.quadrado {
+  width: 100px; /* Aumente o valor para aumentar o tamanho dos quadrados */
+  height: 100px; /* Aumente o valor para aumentar o tamanho dos quadrados */
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quadrado:hover {
+  background-color: #555;
+}
+
+.quadrado.revelado {
+  background-color: #777;
+}
+
+.mina {
+  background-color: #ff5a5a;
+  color: #000;
+}
+
+.ponto {
+  background-color: #e25d04;
+  color: #000;
+}
+#reiniciar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+#reiniciar {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  max-width: 200px;
+  position: relative;
+}
+
+#aumentar-bombas {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+#diminuir-bombas {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+footer {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.img-final {
+  background: url(rodape.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 2698px;
+  height: 372px;
+  text-align: center;
+
+
+
+}
+
+.novidades-promomocoes {
+  padding-top: 200px;
+  color: rgb(255, 115, 0);
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.novidades-promomocoes h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.novidades-promomocoes input {
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+
+}
+
+.novidades-promomocoes button {
+  width: 55px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 115, 0);
+  color: white;
+}
+.novidades-promomocoes button:hover{
+  background-color: rgb(255, 115, 0);
+}
+
+.final-rodape {
+  margin-top: 50px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+  
+
+}
+.final-rodape h6 {
+  color: rgb(255, 115, 0);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.final-rodape p{
+  color: white;
+}
+.final-rodape p:hover{
+  color: rgb(165, 163, 163);
+  cursor: pointer;
+}
+/* FINAL PÁGINA HOME */
