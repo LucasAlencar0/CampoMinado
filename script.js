@@ -2,7 +2,7 @@
 const campoMinado = [];
 const totalQuadrados = 24;
 const maximoMinas= 23;
-var totalMinas= 1; // Ajuste o número de minas conforme necessário
+var totalMinas= 2; // Ajuste o número de minas conforme necessário
 let jogoPerdido = false; // Variável para controlar se o jogo foi perdido
 
 // Referência ao elemento do campo minado
